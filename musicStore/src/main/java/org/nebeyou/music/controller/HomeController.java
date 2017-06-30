@@ -80,7 +80,5 @@ public class HomeController {
         productDao.deleteProduct(productId);
         return "redirect:/admin/productInventory";
     }
-    public void test(){
-    	System.out.println("My controller");
-    }
+   
 }
