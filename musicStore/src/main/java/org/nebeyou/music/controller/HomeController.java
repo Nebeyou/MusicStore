@@ -59,7 +59,7 @@ public class HomeController {
         model.addAttribute("product",product);
         return "addProduct";
     }
-   /* @PostMapping("/admin/productInventory/addProduct")
+    @PostMapping("/admin/productInventory/addProduct")
     public String addProductPost(@ModelAttribute("product") Product product, HttpServletRequest request){
         productDao.addProduct(product);
         MultipartFile productImage=product.getProductImage();
@@ -74,7 +74,7 @@ public class HomeController {
         }
 
         return "redirect:/admin/productInventory/";
-    }*/
+    }
     @RequestMapping("/admin/productInventory/deleteProduct/{productId}")
     public String deleteProduct(@PathVariable String productId,Model model) throws IOException{
         productDao.deleteProduct(productId);
